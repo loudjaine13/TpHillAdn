@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class HiillADN {
-	//test 
 	// convertisseur Binnair
 	public static String texteEnBinaire(String texte) {
         StringBuilder binaire = new StringBuilder();
@@ -166,7 +165,7 @@ public class HiillADN {
                     if (codons != null && indexCodon >= 0 && indexCodon < codons.size()) {
                         sequenceDNA.append(codons.get(indexCodon));
                     } else {
-                        throw new IllegalArgumentException("Acide aminé ou index codon invalide: " + aminoAcide + ", " + indexCodon);
+                        throw new IllegalArgumentException("Acide aminé ou index de codon invalide : " + aminoAcide + ", " + indexCodon);
                     }
                     pointeurAminoAcide++;  // Passer à l'acide aminé suivant
                 }
